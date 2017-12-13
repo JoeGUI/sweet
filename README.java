@@ -1,8 +1,8 @@
  public static void printArray(String message, int a[])  {
-        //Êı×é´òÓ¡
+        //æ•°ç»„æ‰“å°
         System.out.println(message);
         for (int i = 0; i < a.length; i++) {
-            System.out.print(a[i]+"£¬");
+            System.out.print(a[i]+"ï¼Œ");
         }
 
         System.out.println();
@@ -13,19 +13,19 @@
 
 
 public static void reverseArray(int a[]) {
-        //Êı×é·´×ª  µ÷ÓÃCollectionsµÄreverse·½·¨¡£
+        //æ•°ç»„åè½¬  è°ƒç”¨Collectionsçš„reverseæ–¹æ³•ã€‚
 
         ArrayList< Integer> arrayList = new ArrayList<>();
         for (int i = 0; i < a.length; i++) {
             arrayList.add(a[i]);
         }
-        System.out.println("·´×ªÇ°£º");
+        System.out.println("åè½¬å‰ï¼š");
         for (Integer integer : arrayList) {
             System.out.print(integer+",");
         }
         System.out.println();
         Collections.reverse(arrayList);
-        System.out.println("ÅÅĞòºó£º");
+        System.out.println("æ’åºåï¼š");
         for (Iterator<Integer> iterator = arrayList.iterator(); iterator.hasNext();) {
 
             System.out.print(iterator.next()+",");
@@ -35,7 +35,7 @@ public static void reverseArray(int a[]) {
 
 
 public static void joinArray(int[] a, int[] b) {
-            //ºÏ²¢Á½¸öÊı×é
+            //åˆå¹¶ä¸¤ä¸ªæ•°ç»„
             List<Integer> list = new ArrayList<>();
             for (int i = 0; i < a.length; i++) {
                 list.add(a[i]);
@@ -45,7 +45,7 @@ public static void joinArray(int[] a, int[] b) {
                 list.add(b[i]);
 
             }    
-            System.out.println("ºÏ²¢ºóµÄÊı×é£º");
+            System.out.println("åˆå¹¶åçš„æ•°ç»„ï¼š");
             for (Integer integer : list) {
                 System.out.print(integer+" ");
             }
